@@ -1,0 +1,52 @@
+.footer-soc-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: var(--blue);
+  }
+    &:hover .workers-soc-icon,
+    &:focus .workers-soc-icon {
+    fill: var(--white);
+  }
+  }
+  
+  
+  
+  
+  
+  .footer-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-soc-icon {
+    fill: var(--white);
+  }
+  
+  .footer-soc-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--white);
+  }
+  
+  .footer-soc-title {
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,15 @@
+button {
+    background-color: var(--blue);
+    &:hover {
+        background-color: var(--dark-blue);
+        color: var(--white);
+      }
+    &:focus {
+        background-color: var(--dark-blue);
+        color: var(--white);
+      }
+}
+
+
+  
+  

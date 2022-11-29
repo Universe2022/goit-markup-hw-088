@@ -1,0 +1,65 @@
+.footer-online-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--white);
+  }
+  
+  .footer-online-title {
+    margin-bottom: 20px;
+  }
+  
+  .online-button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-left: 12px;
+    color: var(--white);
+  
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .online-input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    &::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  
+  
+  .modal-online-icon {
+    fill: var(--white);
+    margin-left: 10px;
+  }
+  
+  .online-section {
+    margin-left: 93px;
+  }
+  
+  .online-form {
+    display: flex;
+  }
