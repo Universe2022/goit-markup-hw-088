@@ -32,28 +32,31 @@
   </head>
 
   <body class="site-body">
-      <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo link"
             >Web<span class="logo__text">Studio</span>
           </a>
-          <ul class="menu list ">
+          
+          <ul class="menu list">
             <li>
               <a
                 class="current menu__item link"
                 href="index.html"
                 style="color: #2196f3"
-                >Студія</a
-              >
+                >Студія
+              </a>
             </li>
             <li>
-              <a class="menu__item link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="menu__item link" href="./portfolio.html">
+                Портфоліо
+              </a>
             </li>
             <li>
-              <a class="menu__item link" href="#">Контакти</a>
+              <a class="menu__item link" href="#">
+                Контакти
+              </a>
             </li>
           </ul>
         </nav>
@@ -77,12 +80,107 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="naw-icon" width="24" height="16">
+            <use href="./img/icons.svg#icon-naw-button"></use>
+          </svg>
+        </button>
       </div>
-    </header>  
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu__close" data-menu-close>
+              <svg class="mob-close-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="mob-menu__list list">
+              <li class="mob-menu-item-list">
+                <a class="mob__menu__item link" href="index.html">Студія</a>
+              </li>
+              <li class="mob-menu-item-list">
+                <a class="mob__menu__item link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-item-list">
+                <a class="mob__menu__item link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <ul class="mob-connect list">
+              <li class="mob-tel">
+                <a class="mob-connect__tel list link" href="tel:+380961111111">
+                  <!--         <svg class="connect__phone" width="10" height="16">
+                  <use href="./img/post-phone.svg#icon-phone"></use>
+                </svg>    -->
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mob-connect__mail list link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <!--        <svg class="connect__icon" width="16" height="12">
+                  <use href="./img/post-phone.svg#icon-post"></use>
+                </svg>  -->
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero__title">ефективні рішення для<br />вашого бізнесу</h1>
           <button class="hero__btn" type="button" data-modal-open>
             Замовити послугу
@@ -181,7 +279,7 @@
                   width="450"
                 />
               </picture>
-          <!--    <img
+              <!--    <img
                 class="about-workers-photo"
                 srcset="img/img3.jpg 1x, img/img3-2x.jpg 2x"
                 src="img/img3.jpg"
@@ -243,7 +341,7 @@
                   width="450"
                 />
               </picture>
-          <!--    <img
+              <!--    <img
                 class="about-workers-photo"
                 srcset="img/img4.jpg 1x, img/img4-2x.jpg 2x"
                 src="img/img4.jpg"
@@ -305,7 +403,7 @@
                   width="450"
                 />
               </picture>
-           <!--   <img
+              <!--   <img
                 class="about-workers-photo"
                 srcset="img/img5.jpg 1x, img/img5-2x.jpg 2x"
                 src="img/img5.jpg"
@@ -367,13 +465,13 @@
                   width="450"
                 />
               </picture>
-          <!--   <img
+              <!--   <img
                 class="about-workers-photo"
                 srcset="img/img6.jpg 1x, img/img6-2x.jpg 2x"
                 src="img/img6.jpg"
                 alt="фото юай дизайнера"
                 width="270"
-              />  --> 
+              />  -->
               <h3 class="about-workers-name">Михайло Єрмаков</h3>
               <p class="about-workers-text">UI Designer</p>
               <ul class="workers-soc-list list">
@@ -467,98 +565,100 @@
       </section>
     </main>
 
-    <!--   <footer class="contacts-adress">
+    <footer class="contacts-adress">
       <div class="container footer-container">
-        <div class="footer-container-left">
-          <a href="./index.html" class="logo link"
-            >Web<span class="header-studio-logo">Studio</span></a
-          >
-          <address class="contacts-adresses">
-            <ul class="about-contacts list link">
-              <li class="about-map">
-                <a
-                  class="about-contacts-map link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        
+          <div class="footer-container-left">
+            <a href="./index.html" class="logo footer-logo link"
+              >Web<span class="header-studio-logo">Studio</span></a
+            >
+            <address class="contacts-adresses">
+              <ul class="about-contacts list link">
+                <li class="about-map">
+                  <a
+                    class="about-contacts-map link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="about-mail">
+                  <a
+                    class="about-contacts-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="about-tel">
+                  <a class="about-contacts-tel link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-container-right">
+            <p class="footer-soc-title">Приєднуйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="about-mail">
-                <a
-                  class="about-contacts-mail link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="about-tel">
-                <a class="about-contacts-tel link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
+          </div>
 
-        <div class="footer-container-right">
-          <p class="footer-soc-title">Приєднуйтесь</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="online-section">
+            <p class="footer-online-title">Підпишіться на розсилку</p>
 
-        <div class="online-section">
-          <p class="footer-online-title">Підпишіться на розсилку</p>
+            <form class="online-form">
+              <input
+                type="email"
+                name="user-mail"
+                class="online-input"
+                placeholder="E-mail"
+                required
+                id="user-mail"
+              />
 
-          <form class="online-form">
-            <input
-              type="email"
-              name="user-mail"
-              class="online-input"
-              placeholder="E-mail"
-              required
-              id="user-mail"
-            />
-
-            <button type="submit" class="online-button">
-              Підписатися
-              <svg class="modal-online-icon" width="24" height="24">
-                <use href="./img/icons.svg#icon-iconsend"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+              <button type="submit" class="online-button">
+                Підписатися
+                <svg class="modal-online-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-iconsend"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        
       </div>
-    </footer> -->
+    </footer>
 
-    <!--    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
@@ -646,19 +746,20 @@
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю &nbsp
-              <a href="" class="modal-condition"> Умови договору</a>
+              <a href="" class="modal-condition">Умови договору</a>
             </label>
           </div>
 
           <button class="modal-button" type="submit">Відправити</button>
         </form>
       </div>
-    </div>  -->
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
