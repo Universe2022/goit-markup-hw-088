@@ -3,20 +3,21 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    white-space:nowrap;
     color: var(--white);
   }
   
   .about-contacts-mail {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(16/14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .about-mail {
-    margin-top: 9px;
-  }
+ /* .about-mail {
+   margin-top: 9px;
+  }*/
   
   .about-contacts-tel {
     font-weight: 400;
@@ -26,9 +27,9 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .about-tel {
+  /*.about-tel {
     margin-top: 9px;
-  }
+  }*/
   
   .contacts-adress {
     background-color: var(--dark-section);
