@@ -1390,7 +1390,6 @@ header {
     flex-wrap: nowrap;
     align-items: baseline;
     gap: 94px;
-    align-items: flex-start;
   }
 }
 
