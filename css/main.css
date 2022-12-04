@@ -450,31 +450,41 @@ button:focus {
   /*display: flex;*/
   display: none;
   gap: 50px;
-  /*margin-left: 93px;*/
-}
-@media screen and (min-width: 1200px) {
-  .menu {
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
-  }
 }
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
     gap: 50px;
     margin-left: 88px;
-    margin-right: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    gap: 50px;
   }
 }
 
 header {
-  padding-top: 24px;
+  padding-top: 16px;
   /*padding-bottom: 25px;*/
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   header {
+    padding-top: 24px;
     padding-bottom: 25px;
   }
 }
@@ -561,6 +571,7 @@ header {
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: 96px;
 }
 
 .header__container {
@@ -730,7 +741,7 @@ header {
 }
 
 .mob-menu__list {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .mob-connect__tel {
@@ -805,7 +816,7 @@ header {
   background-color: var(--dark-section);
   /*padding-top: 200px;
   padding-bottom: 200px;*/
-  padding: 118px 45px;
+  padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-main-mob.jpg.jpg);
   /*width: 1600px*/
   margin: 0 auto;
@@ -993,6 +1004,12 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .main-item {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .main-item-list {
   display: flex;
@@ -1028,6 +1045,16 @@ header {
   color: var(--dark-title);
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main-item-title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-item-title {
+    text-align: left;
+  }
 }
 
 .main-item-text {
@@ -1344,7 +1371,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 93px;
+    gap: 60px;
     align-items: center;
     justify-content: center;
   }
@@ -1360,8 +1387,9 @@ header {
   .footer-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: baseline;
-    gap: 93px;
+    gap: 94px;
     align-items: flex-start;
   }
 }
@@ -1475,7 +1503,7 @@ header {
 }
 
 .footer-online-title {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .footer-online-title {

@@ -2,6 +2,11 @@
     background-color: inherit;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+     padding-top: 94px;
+    padding-bottom: 94px;
+  }
   }
  
   .main-item-list {
@@ -38,6 +43,14 @@
   
     margin-bottom: 10px;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+    text-align: left;
+  } 
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 
   }
   

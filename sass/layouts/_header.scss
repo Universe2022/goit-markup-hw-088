@@ -20,31 +20,41 @@
   /*display: flex;*/ 
   display: none;
   gap: 50px;
-  /*margin-left: 93px;*/
   
  
-
-   @media screen and (min-width: 1200px) {
-    display: flex;
-  gap: 50px;
-  margin-left: 93px;
-  }
-
    @media screen and (min-width: 768px) {
     display: flex;
   gap: 50px;
   margin-left: 88px;
-  margin-right: 93px;
+ 
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  gap: 50px;
+
+  }
+
 
 }
 
 header {
-  padding-top: 24px;
+  padding-top: 16px;
   /*padding-bottom: 25px;*/ 
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+
+   @media screen and (min-width:480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width:768px) {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 24px;
     padding-bottom: 25px;
   }
 }
@@ -131,6 +141,7 @@ header {
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: 96px;
 }
 
 .header__container {
@@ -302,7 +313,7 @@ header {
 }
 
 .mob-menu__list {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .mob-connect__tel {
