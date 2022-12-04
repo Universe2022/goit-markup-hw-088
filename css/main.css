@@ -1378,9 +1378,9 @@ header {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    /* align-items: center;
-    justify-content: center;*/
-    align-items: baseline;
+    /* align-items: baseline;
+     gap: 165px;*/
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1429,6 +1429,28 @@ header {
 @media screen and (min-width: 1200px) {
   .about-contacts {
     align-items: flex-start;
+  }
+}
+
+.left-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .left-right {
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .left-right {
+    display: flex;
+    flex-direction: row;
+    gap: 94px;
   }
 }
 
@@ -1602,8 +1624,8 @@ header {
 @media screen and (min-width: 768px) {
   .online-form {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
     padding-left: 0px;
     padding-right: 0px;
   }

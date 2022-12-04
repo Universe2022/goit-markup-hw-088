@@ -18,10 +18,11 @@ gap: 60px;
     
   }
 
-   @media screen and (min-width: 768px) {
-   /* align-items: center;
-   justify-content: center;*/
-   align-items: baseline;
+   @media screen and (min-width: 768px){
+   
+  /* align-items: baseline;
+   gap: 165px;*/ 
+   display: flex;
   }
 
    @media screen and (min-width: 1200px) {
@@ -72,6 +73,24 @@ gap: 60px;
   }
   }
 
- 
+ .left-right{ 
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+   @media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: row;
+  gap: 165px;
+  justify-content: center;
+  align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  flex-direction: row;
+  gap: 94px;
+  }
+ }
 
   
